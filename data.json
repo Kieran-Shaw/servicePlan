@@ -1,0 +1,1719 @@
+{
+  "record_id": "rechMP35TO7KupDlY",
+  "request_type": "ServiceOnly",
+  "client_metadata": {
+    "client_id": [
+      "0016S000034HNnwQAG"
+    ],
+    "group_size": "Small Group",
+    "funding_tag": "Fully Insured",
+    "conditionals": [
+      "Onboarding"
+    ],
+    "client_record_id": [
+      "recxNRQ8YF50hS5Qs"
+    ],
+    "renewal_date": "2023-04-01",
+    "bor_date": "2022-02-01",
+    "ale_status": "Not ALE",
+    "ftes": 20
+  },
+  "service_items": [
+    {
+      "service_journey_bucket_id": "rec2Pw9be35hKbn8E",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": null,
+        "date_logic": {
+          "Large Group": {
+            "NBP Date": 45,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "days",
+            "drop_dead_time_unit": "days"
+          },
+          "Small Group": {
+            "NBP Date": 45,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "days",
+            "drop_dead_time_unit": "days"
+          }
+        }
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "recVke0NkWR4tPz29",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec2uHp1DfXVekTda",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec6mWrAF6jHbRibd",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recF6ENDEGaAYAWE3",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recG6GQXJVR3RI3U0",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recJeYMhht22TiBTN",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recXA6BXAE7MVppPX",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recdj6SM5ZkQDQrlW",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "receZnIjMXFuJ0rK1",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recjLXlVZt1HAwi9r",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recqEe5iv6LMxbXye",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recd7cpoHmAtonqlo",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "rec2Pw9be35hKbn8E"
+              },
+              "Small Group": {
+                "bucket_dependency": "rec2Pw9be35hKbn8E"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recOowMPqaEc0L4AD",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recjEh9u1B18SkSZw",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "milestone_dependency": "recd7cpoHmAtonqlo",
+                "time_length": -7,
+                "time_unit": "days"
+              },
+              "Small Group": {
+                "milestone_dependency": "recd7cpoHmAtonqlo",
+                "time_length": -7,
+                "time_unit": "days"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec5QajGgMJGRqnVo",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recFBLuhIpTZ6RL2Y",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recX6dpNnLYwyAjDU",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service_journey_bucket_id": "recAQ0uVAW4euMaIn",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": null,
+        "date_logic": {
+          "Large Group": {
+            "NBP Date": -2,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "months",
+            "drop_dead_time_unit": "days"
+          },
+          "Small Group": {
+            "NBP Date": -45,
+            "Drop Dead Date": 25,
+            "nbp_time_unit": "days",
+            "drop_dead_time_unit": "days"
+          }
+        }
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "rec1LiEqiUJED6tz2",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recEeSJfDBsbWkQLm",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recc4jD0qC27q01RO",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recBbMYXAlnxlkizr",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Alex by Jellyvision",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec35gctHtAy4pHpA",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec9s4VbfoKEbkmK7",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recKYVncyacOJhhXC",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recY0nA3YVs5uLMZs",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recHDeLc3FLWMd2eG",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Health Fairs",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        },
+        {
+          "milestone_id": "recMxLULFTqyJ7S3j",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recKDUGPDTM514yTK",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recpb5rC5mvRO6UEx",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recQvwBfJKkmat5Pi",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Physical Benefits Guide",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        },
+        {
+          "milestone_id": "recbVGiUXeG9kLLud",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Rightway",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recE6lBBZ2jIfSWf9",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recRZAZpcQxCrVmum",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rece1x6xPHBHVMoBN",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rechQVTUZmgF7GOdD",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recmwzisJyUCmfWpG",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recIppRDfJte2hl57",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recVLMYz4QSw3iO8A",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recaqaZ3cnIS9piim",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recgbihR9ZGtkr9sq",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recpjhQZ76TjMXYwU",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recAQ0uVAW4euMaIn"
+              },
+              "Small Group": {
+                "bucket_dependency": "recAQ0uVAW4euMaIn"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "reclN0oI9IMmPHPfw",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "reczVKmvPxuFitBP5",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "milestone_dependency": "recpjhQZ76TjMXYwU",
+                "time_length": -7,
+                "time_unit": "days"
+              },
+              "Small Group": {
+                "milestone_dependency": "recpjhQZ76TjMXYwU",
+                "time_length": -7,
+                "time_unit": "days"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recAtLjTMnKIoRNMw",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recSLOqqcaXygX6B2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reckskbFAULcQdmKp",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reclgzOiydfM2w28Y",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recpv5GaTT1YRHZB0",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recylG7scH4QWwzmW",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service_journey_bucket_id": "recCXYRH4qxmbjDLv",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": "Onboarding",
+        "date_logic": {
+          "Large Group": {
+            "NBP Date": -30,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "days",
+            "drop_dead_time_unit": "days"
+          },
+          "Small Group": {
+            "NBP Date": -30,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "days",
+            "drop_dead_time_unit": "days"
+          }
+        }
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "rec88GwTG5npLK1LK",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Onboarding",
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              },
+              "Small Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec2z9YqsrwdNnwkn",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recNZA095tQEkvHBo",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recbK43Gn81Wdkgs3",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recjERmWqYkA6hHrc",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recoZSjqkDdCTDjV9",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recrdEF9w7IPzEw2A",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recC2hGFVPgeQZl37",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Onboarding",
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              },
+              "Small Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec3rZ6uGbft87yWW",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recE1qXMJ2sO1Ictz",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recL8Cga0vT8OxoDz",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recPOlDb5f5r9K6Jr",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recQrUK01lOFCXbcZ",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recSsAU7ERCzpv58N",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recTPATHBEaagTTSh",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reccchA1u2cofY7Ec",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recsqJ2C8UVPNgCXu",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rectbeEeh6vVsk9iV",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recDjhRuX5AoanBaS",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Onboarding",
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              },
+              "Small Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec5todG30g4ExFGu",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recCh5dDVn280pkOO",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recDW5YhvFqwArUzn",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recGN9vp2Ry8sJy05",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recMRrjBm6aKkBHo6",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recoAl5n6HsMJC8Gj",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recrMLyevQaq34Cua",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recrsqTcqI5INmDOR",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rect6QT2BfGeFWUz2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reczk0NxHmWX9ORCv",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recX67G0BONBKFLp2",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Onboarding",
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              },
+              "Small Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec36ohtGLIWtJbse",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec94QV0kQG2ceqlh",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recMKRGWdpyfnXku2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recPC0xNBUsGyNGpK",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recZ2ggtyxFdJSmyQ",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recaWY95gESVxli2S",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recupsWOB5xbjZkGk",
+              "task_metadata": {
+                "group_size": "Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recysCDmq6sLo9wCo",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recz3VlWXqaPrB9Ml",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recvihpPlHqyhtyW8",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Nava Benfits App, Onboarding",
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              },
+              "Small Group": {
+                "bucket_dependency": "recCXYRH4qxmbjDLv"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec77PFJHhPsFHXH9",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec7xDIboTnhR7zWK",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec8ZEju4doFoPaFp",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recOBKJg4Zh00wat7",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recTbABZpbOUMp3HE",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recUPkY1q4U5WYeT7",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recYPufIWHipUEAQl",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recbWKlel28Vdq6MS",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rechQK5s1TeDz9RZ2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recsQZwyKFceoqHyq",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recwa7MP8bBfkgJkM",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service_journey_bucket_id": "recDLZWtZHCTpAqI6",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": "Benefits Eligibility, ERISA Attorney",
+        "date_logic": null
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "recGmDfZYFPu37Jd4",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Benefits Eligibility",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        },
+        {
+          "milestone_id": "recWo3TvwbPzOj8Ve",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "ERISA Attorney",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "service_journey_bucket_id": "recDjifE6hWt1Iczl",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": null,
+        "date_logic": {
+          "Large Group": {
+            "NBP Date": -6,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "months",
+            "drop_dead_time_unit": "days"
+          },
+          "Small Group": {
+            "NBP Date": -4,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "months",
+            "drop_dead_time_unit": "days"
+          }
+        }
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "recCmcJQREzJqu7K6",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recDjifE6hWt1Iczl"
+              },
+              "Small Group": {
+                "bucket_dependency": "recDjifE6hWt1Iczl"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recOj0jTz8ywR8YJ2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recOtH7EITuTv5VAb",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recbzXNgZzCN7jP5t",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recmm57rsKbaVGZ2q",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Employee Survey",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recXJzAPFJOV1NLUw",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recvpMLgtvnuEkvIx",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "milestone_dependency": "recCmcJQREzJqu7K6",
+                "time_length": -7,
+                "time_unit": "days"
+              },
+              "Small Group": {
+                "milestone_dependency": "recCmcJQREzJqu7K6",
+                "time_length": -7,
+                "time_unit": "days"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recEJeIqezeDCbpyv",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recS9oxp6Q3vv5QjR",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recWbSmbYn5RgowAf",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reca5pbBYOZH2a3l2",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recrIrRV4sV7JbSYz",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reczJDagcwGAq7hl3",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service_journey_bucket_id": "recF3eUN5BF6eTPms",
+      "bucket_metadata": {
+        "group_size": "Large Group, Small Group",
+        "conditional_tag": null,
+        "date_logic": {
+          "Large Group": {
+            "NBP Date": -3,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "months",
+            "drop_dead_time_unit": "days"
+          },
+          "Small Group": {
+            "NBP Date": -2,
+            "Drop Dead Date": 15,
+            "nbp_time_unit": "months",
+            "drop_dead_time_unit": "days"
+          }
+        }
+      },
+      "bucket_milestones": [
+        {
+          "milestone_id": "recAD31U02tmzS0ev",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recF3eUN5BF6eTPms"
+              },
+              "Small Group": {
+                "bucket_dependency": "recF3eUN5BF6eTPms"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec4kNDDR2hYfNtRR",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recN2BoD54GjJngyA",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recTqIHEB9KiLUcVj",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recv5HMs5xTgddlLT",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recOOVDZLcjKxbFYN",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "milestone_dependency": "receI6ttxIv7npHrH",
+                "time_length": -7,
+                "time_unit": "days"
+              },
+              "Small Group": {
+                "milestone_dependency": "receI6ttxIv7npHrH",
+                "time_length": -7,
+                "time_unit": "days"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recLCBXcTCdMxwxH5",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recPxhpRyaZQ2PZbP",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reca7l2cjApn7XMwt",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recveRKyxKtYeDcUb",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recRFa8ZsvsqGDtGq",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "M&A Advisory + Benefits Consolidation",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        },
+        {
+          "milestone_id": "receI6ttxIv7npHrH",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "bucket_dependency": "recF3eUN5BF6eTPms"
+              },
+              "Small Group": {
+                "bucket_dependency": "recF3eUN5BF6eTPms"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "recqw01116zGIz539",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recj9rZh9g1npzS0s",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": "Subsidize Key Benefits Partnerships",
+            "date_logic": null
+          },
+          "milestone_tasks": [
+            null
+          ]
+        },
+        {
+          "milestone_id": "recubHUztXt6kA0My",
+          "milestone_metadata": {
+            "group_size": "Small Group, Large Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Large Group": {
+                "milestone_dependency": "receI6ttxIv7npHrH",
+                "time_length": -45,
+                "time_unit": "days"
+              },
+              "Small Group": {
+                "milestone_dependency": "receI6ttxIv7npHrH",
+                "time_length": -45,
+                "time_unit": "days"
+              }
+            }
+          },
+          "milestone_tasks": [
+            {
+              "task_id": "rec0oatQegyi0cObE",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec5Kv7xN41dVQuhF",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "rec9IrReJqB7QTKib",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recHo4Cl8ZgBSVKCI",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recIYSjoR4OHEXIXm",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recWG3qz6OVRlJ8p3",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reck4T9eJK6EqJsbt",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reclQSLwpiHlEiDQn",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recnBLBp3Fv7DA2QE",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "recoLbWQaVcIoA9Rd",
+              "task_metadata": {
+                "group_size": "Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            },
+            {
+              "task_id": "reczTGojIwQiVg8yO",
+              "task_metadata": {
+                "group_size": "Small Group, Large Group",
+                "funding_tag": "Fully Insured, Self Insured"
+              }
+            }
+          ]
+        },
+        {
+          "milestone_id": "recwSpAkzwZcS6jI0",
+          "milestone_metadata": {
+            "group_size": "Small Group",
+            "conditional_tag": null,
+            "date_logic": {
+              "Small Group": {
+                "custom_date": "seventy_five_before_renewal_date"
+              }
+            }
+          },
+          "milestone_tasks": [
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "compliance_items": [
+    {
+      "recordId": "rec7EiMz4QT9Mpo7E",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Fully Insured",
+          "fullTimeEmployeesThreshold": 50
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "1/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 2
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recEgAGsn6ooj1bVZ",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": 100
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "10/3/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 1
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recGbjdRvRt5Vr0Kn",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": 250
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "1/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 1
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recGpiRqyKnZEaBHt",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": 60,
+            "monthsPostRenewal": null,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": 30,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recLw3TwXax6nIKng",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Self Insured",
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "7/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 1
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recOCZqZWHZ1xGvrV",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Self Insured",
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "1/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 2
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recPQeuYYoDoEhZt3",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Applicable Large Group Employer",
+          "fullTimeEmployeesThreshold": 100
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": 9,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": 8,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recQVajXyuNCuPYXX",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "1/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 2
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recYJHp0AvALMHvPj",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": 209,
+            "monthsPostRenewal": null,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": 90,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recaARhaXnMn2rhjv",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Self Insured",
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "1/31/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 2
+          }
+        }
+      }
+    },
+    {
+      "recordId": "receTajcZfJesm2e8",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": 60,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recn8MeIfXwCUTuOV",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "10/14/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 1
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recr6ww1TZwk4ffcm",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": "6/1/2023"
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": 2
+          }
+        }
+      }
+    },
+    {
+      "recordId": "rectH7MHSnoOQS6uI",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": 30,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recx797Hy6ERSzuR7",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": "Applicable Large Group Employer",
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": 7,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": 6,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    },
+    {
+      "recordId": "recyH2basZqq20OK5",
+      "data": {
+        "conditions": {
+          "stateApplicability": "Federal",
+          "conditionEvaluation": null,
+          "fullTimeEmployeesThreshold": null
+        },
+        "dateLogic": {
+          "complianceDeadlines": {
+            "daysPostRenewal": null,
+            "monthsPostRenewal": null,
+            "calendarDueDate": null
+          },
+          "navaComplianceDeadlines": {
+            "daysPostRenewal": 90,
+            "monthsPostRenewal": null,
+            "calendarDueDateCalc": null
+          }
+        }
+      }
+    }
+  ]
+}
