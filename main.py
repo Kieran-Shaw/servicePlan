@@ -10,7 +10,7 @@ def service_plan(request):
     # Get the Credentials
     bucket_name = 'service-plan-credentials'
     file_name = 'airtable-creds.json'
-    credentials = AirtableCreds(credentials_bucket=bucket_name,credentials_file=file_name)
+    credentials = AirtableCreds(credentials_bucket=bucket_name,credentials_file=file_name).download_credentials()
 
     # Load the data
     data = request.get_json()
