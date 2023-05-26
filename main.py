@@ -1,16 +1,17 @@
 from pyairtable import Table
 from modules.servicePlan import servicePlan
 from modules.compliancePlan import compliancePlan
+from modules.airtableCreds import AirtableCreds
 from dotenv import dotenv_values
-import functions_framework
-
 
 def service_plan(request):
     """
     Need to recfactor this code, it is frankly quite awful
     """
-    # Load the environment variables from .env file
-    env_vars = dotenv_values(".env")
+    # Get the Credentials
+    bucket_name = 'service-plan-credentials'
+    file_name = 'airtable-creds.json'
+    credentials = AirtableCreds(credentials_bucket=bucket_name,credentials_file=file_name)
 
     # Load the data
     data = request.get_json()
@@ -27,10 +28,10 @@ def service_plan(request):
     request_type = data["request_type"]
 
     ## AIRTABLE CONNECTIONS
-    serviceBucketTable = Table(env_vars["AUTH_TOKEN"],env_vars["AIRTABLE_BASE"],env_vars["SERVICE_BUCKET_TABLE"])
-    serviceMilestoneTable = Table(env_vars["AUTH_TOKEN"],env_vars["AIRTABLE_BASE"],env_vars["SERVICE_MILESTONE_TABLE"])
-    serviceTaskTable = Table(env_vars["AUTH_TOKEN"],env_vars["AIRTABLE_BASE"],env_vars["SERVICE_TASK_TABLE"])
-    complianceMilestoneTable = Table(env_vars["AUTH_TOKEN"],env_vars["AIRTABLE_BASE"],env_vars["COMPLIANCE_MILESTONE_TABLE"])
+    serviceBucketTable = Table(credentials["AUTH_TOKEN"],credentials["AIRTABLE_BASE"],credentials["SERVICE_BUCKET_TABLE"])
+    serviceMilestoneTable = Table(credentials["AUTH_TOKEN"],credentials["AIRTABLE_BASE"],credentials["SERVICE_MILESTONE_TABLE"])
+    serviceTaskTable = Table(credentials["AUTH_TOKEN"],credentials["AIRTABLE_BASE"],credentials["SERVICE_TASK_TABLE"])
+    complianceMilestoneTable = Table(credentials["AUTH_TOKEN"],credentials["AIRTABLE_BASE"],credentials["COMPLIANCE_MILESTONE_TABLE"])
 
     ### BUILDING SCRIPT
     service_data = data["service_items"]
