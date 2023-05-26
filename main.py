@@ -2,6 +2,8 @@ from pyairtable import Table
 from modules.servicePlan import servicePlan
 from modules.compliancePlan import compliancePlan
 from dotenv import dotenv_values
+import functions_framework
+
 
 def service_plan(request):
     """
