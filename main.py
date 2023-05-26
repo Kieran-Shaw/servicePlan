@@ -2,7 +2,6 @@ from pyairtable import Table
 from modules.servicePlan import servicePlan
 from modules.compliancePlan import compliancePlan
 from modules.airtableCreds import AirtableCreds
-from dotenv import dotenv_values
 
 def service_plan(request):
     """
