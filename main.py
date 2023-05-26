@@ -403,3 +403,5 @@ def service_plan(request):
             else:
                 pass
         complianceMilestoneTable.batch_create(compliance_payload,typecast=True)
+
+    return 'Complete'
