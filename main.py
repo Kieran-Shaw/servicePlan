@@ -3,7 +3,6 @@ from modules.servicePlan import servicePlan
 from modules.compliancePlan import compliancePlan
 from dotenv import dotenv_values
 
-
 def service_plan(request):
     """
     Need to recfactor this code, it is frankly quite awful

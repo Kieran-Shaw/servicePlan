@@ -1,0 +1,8 @@
+steps:
+  # Build and deploy get-recent-census
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+          gcloud functions deploy service-plan-creation --runtime=python39 --trigger-http --source=. --region=us-central1 --entry-point=service_plan;
