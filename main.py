@@ -1,30 +1,26 @@
 from pyairtable import Table
-from modules.servicePlan import servicePlan
-from modules.compliancePlan import compliancePlan
+from modules.servicePlan import ServicePlan
+from modules.compliancePlan import CompliancePlan
 from modules.airtableCreds import AirtableCreds
 
 def service_plan(request):
     """
     Need to recfactor this code, it is frankly quite awful
     """
-    # Get the Credentials
+    # Get the Airtable Credentials from Bucket
     bucket_name = 'service-plan-credentials'
     file_name = 'airtable-creds.json'
     credentials = AirtableCreds(credentials_bucket=bucket_name,credentials_file=file_name).download_credentials()
 
     # Load the data
     data = request.get_json()
-
-    client_record_id = data["client_metadata"]["client_record_id"]
-    group_size = data["client_metadata"]["group_size"]
-    funding_tag = data["client_metadata"]["funding_tag"]
-    conditionals = data["client_metadata"]["conditionals"]
-    renewal_date = data["client_metadata"]["renewal_date"]
-    bor_date = data["client_metadata"]["bor_date"]
-    ale_status = data["client_metadata"]["ale_status"]
-    fte_num = data["client_metadata"]["ftes"]
-    compliance_renewal_date = compliancePlan.complianceRenewalDate(renewalDate=renewal_date)
     request_type = data["request_type"]
+    # Instantiate the SerivcePlan Class
+    service_plan = ServicePlan(data=data)
+    compliance_plan = CompliancePlan(data=data)
+
+
+    compliance_renewal_date = compliancePlan.complianceRenewalDate(renewalDate=renewal_date)
 
     ## AIRTABLE CONNECTIONS
     serviceBucketTable = Table(credentials["AUTH_TOKEN"],credentials["AIRTABLE_BASE"],credentials["SERVICE_BUCKET_TABLE"])
@@ -37,6 +33,13 @@ def service_plan(request):
     compliance_data = data["compliance_items"]
     bucket_batch_list = []
     compliance_payload = []
+
+
+
+
+
+
+    
 
 
     if request_type == "ServiceCompliance":

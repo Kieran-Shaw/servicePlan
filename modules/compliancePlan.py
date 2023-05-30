@@ -1,17 +1,24 @@
 import datetime
 from dateutil.relativedelta import relativedelta
 
-class compliancePlan:
-    def __init__(self) -> None:
-        pass
+class CompliancePlan:
+    def __init__(self,data):
+        self.client_record_id = data["client_metadata"]["client_record_id"]
+        self.group_size = data["client_metadata"]["group_size"]
+        self.funding_tag = data["client_metadata"]["funding_tag"]
+        self.conditionals = data["client_metadata"]["conditionals"]
+        self.renewal_date = data["client_metadata"]["renewal_date"]
+        self.bor_date = data["client_metadata"]["bor_date"]
+        self.ale_status = data["client_metadata"]["ale_status"]
+        self.fte_num = data["client_metadata"]["ftes"]
 
-    def selfInsured(clientFundingTag:str):
+    def selfInsured(self,clientFundingTag:str):
         if "self" in clientFundingTag.lower():
             return True
         else:
             return False
         
-    def fullyInsured(clientFundingTag:str):
+    def fullyInsured(self,clientFundingTag:str):
         if "fully" in clientFundingTag.lower():
             return True
         else:

@@ -2,12 +2,19 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 
-class servicePlan:
-    def __init__(self) -> None:
-        pass
+class ServicePlan:
+    def __init__(self,data:dict):
+        self.client_record_id = data["client_metadata"]["client_record_id"]
+        self.group_size = data["client_metadata"]["group_size"]
+        self.funding_tag = data["client_metadata"]["funding_tag"]
+        self.conditionals = data["client_metadata"]["conditionals"]
+        self.renewal_date = data["client_metadata"]["renewal_date"]
+        self.bor_date = data["client_metadata"]["bor_date"]
+        self.ale_status = data["client_metadata"]["ale_status"]
+        self.fte_num = data["client_metadata"]["ftes"]
 
-    def groupSize(logicGroupSize:str,clientGroupSize:str):
-        if clientGroupSize in logicGroupSize:
+    def groupSize(self,logic_group_size:str,client_group_size:str):
+        if client_group_size in logic_group_size:
             return True
         else:
             return False
