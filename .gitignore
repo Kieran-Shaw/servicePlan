@@ -9,3 +9,5 @@ __pycache__/
 
 # Ignore test files
 test.py
+
+data.json
