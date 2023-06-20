@@ -1,17 +1,9 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-
 class ServicePlan:
-    def __init__(self,data:dict):
-        self.client_record_id = data["client_metadata"]["client_record_id"]
-        self.group_size = data["client_metadata"]["group_size"]
-        self.funding_tag = data["client_metadata"]["funding_tag"]
-        self.conditionals = data["client_metadata"]["conditionals"]
-        self.renewal_date = data["client_metadata"]["renewal_date"]
-        self.bor_date = data["client_metadata"]["bor_date"]
-        self.ale_status = data["client_metadata"]["ale_status"]
-        self.fte_num = data["client_metadata"]["ftes"]
+    def __init__(self):
+        pass
 
     def groupSize(self,logic_group_size:str,client_group_size:str):
         if client_group_size in logic_group_size:
@@ -19,7 +11,7 @@ class ServicePlan:
         else:
             return False
         
-    def conditionalTag(logicConditionals,clientConditionals):
+    def conditionalTag(self,logicConditionals,clientConditionals):
         if not logicConditionals:
             return True
         elif logicConditionals:
@@ -33,7 +25,8 @@ class ServicePlan:
                     return True
                 else:
                     return False
-    def fundingTag(logicFundingTag:str,clientFundingTag:str):
+                
+    def fundingTag(self,logicFundingTag:str,clientFundingTag:str):
         if not logicFundingTag:
             return False
         elif logicFundingTag:
@@ -43,19 +36,19 @@ class ServicePlan:
             else:
                 return False
     
-    def dateTimeNBPDate(date_datetime:datetime,time_length:int,time_unit:str):
+    def dateTimeNBPDate(self,date_datetime:datetime,time_length:int,time_unit:str):
         if time_unit == "days":
             return date_datetime + relativedelta(days=time_length)
         elif time_unit == "months":
             return date_datetime + relativedelta(months=time_length)
 
-    def dateTimeDropDeadDate(bucketReturnDate:datetime,time_length:int,time_unit:str):
+    def dateTimeDropDeadDate(self,bucketReturnDate:datetime,time_length:int,time_unit:str):
         if time_unit == "days":
             return bucketReturnDate + relativedelta(days=time_length)
         elif time_unit == "months":
             return bucketReturnDate + relativedelta(months=time_length)
     
-    def bucketDateLogic(bucket:dict,renewal_date:str,group_size:str,bor_date:str,client_conditionals:list):
+    def bucketDateLogic(self,bucket:dict,renewal_date:str,group_size:str,bor_date:str,client_conditionals:list):
 
         acceptable_group_list = ["Small Group","Large Group"]
         if group_size not in acceptable_group_list:
@@ -76,24 +69,24 @@ class ServicePlan:
             if bucket["service_journey_bucket_id"] == "recCXYRH4qxmbjDLv":
                 if "Onboarding" in client_conditionals:
                     bor_date_formatted = datetime.strptime(bor_date,'%Y-%m-%d')
-                    nbp_date = servicePlan.dateTimeNBPDate(date_datetime=bor_date_formatted,time_length=nbp_time_length,time_unit=nbp_time_unit)
-                    drop_dead_date = servicePlan.dateTimeDropDeadDate(bucketReturnDate=nbp_date,time_length=drop_dead_time_length,time_unit=drop_dead_time_unit)
+                    nbp_date = self.dateTimeNBPDate(date_datetime=bor_date_formatted,time_length=nbp_time_length,time_unit=nbp_time_unit)
+                    drop_dead_date = self.dateTimeDropDeadDate(bucketReturnDate=nbp_date,time_length=drop_dead_time_length,time_unit=drop_dead_time_unit)
                     return nbp_date,drop_dead_date
                 else:
                     return False, False
             else:
                 renewal_date_formatted = datetime.strptime(renewal_date,'%Y-%m-%d')
-                nbp_date = servicePlan.dateTimeNBPDate(date_datetime=renewal_date_formatted,time_length=nbp_time_length,time_unit=nbp_time_unit)
-                drop_dead_date = servicePlan.dateTimeDropDeadDate(bucketReturnDate=nbp_date,time_length=drop_dead_time_length,time_unit=drop_dead_time_unit)
+                nbp_date = self.dateTimeNBPDate(date_datetime=renewal_date_formatted,time_length=nbp_time_length,time_unit=nbp_time_unit)
+                drop_dead_date = self.dateTimeDropDeadDate(bucketReturnDate=nbp_date,time_length=drop_dead_time_length,time_unit=drop_dead_time_unit)
                 return nbp_date,drop_dead_date
         
-    def bucketLogic(bucket:dict,group_size:str,clientConditionals:list,renewal_date:str,bor_date:str):
+    def bucketLogic(self,bucket:dict,group_size:str,clientConditionals:list,renewal_date:str,bor_date:str):
         evaluation_array = [
-            servicePlan.groupSize(logicGroupSize=bucket["bucket_metadata"]["group_size"],clientGroupSize=group_size),
-            servicePlan.conditionalTag(logicConditionals=bucket["bucket_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
+            self.groupSize(logic_group_size=bucket["bucket_metadata"]["group_size"],client_group_size=group_size),
+            self.conditionalTag(logicConditionals=bucket["bucket_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
         ]
         if all(evaluation_array): # if everything is true in return array & if we have TRUTHY variables for return dates, let's rock!
-            nbp_date, drop_dead_date = servicePlan.bucketDateLogic(bucket=bucket,renewal_date=renewal_date,group_size=group_size,bor_date=bor_date,client_conditionals=clientConditionals)
+            nbp_date, drop_dead_date = self.bucketDateLogic(bucket=bucket,renewal_date=renewal_date,group_size=group_size,bor_date=bor_date,client_conditionals=clientConditionals)
             if nbp_date and drop_dead_date:
                 return nbp_date,drop_dead_date
             elif not nbp_date and not drop_dead_date:
@@ -101,13 +94,13 @@ class ServicePlan:
                 drop_dead_date = None
                 return nbp_date,drop_dead_date
             
-    def toAirtableDates(date_time_object:datetime):
+    def toAirtableDates(self,date_time_object:datetime):
         if not date_time_object:
             return None
         else:
             return date_time_object.strftime('%Y-%m-%d')
 
-    def returnQuarter(renewal_date_formatted:datetime):
+    def returnQuarter(self,renewal_date_formatted:datetime):
         renewal_date_year = renewal_date_formatted.year
         renewal_date_month = renewal_date_formatted.month
         if renewal_date_month in (1,2,3):
@@ -119,10 +112,10 @@ class ServicePlan:
         else:
             return datetime(year=renewal_date_year,month=8,day=15)
 
-    def return75Days(renewal_date_formatted:datetime):
+    def return75Days(self,renewal_date_formatted:datetime):
         return renewal_date_formatted - relativedelta(days=75)
 
-    def milestoneDateLogic(milestone:dict,bucket_due_date:datetime,group_size:str,renewal_date:str):
+    def milestoneDateLogic(self,milestone:dict,bucket_due_date:datetime,group_size:str,renewal_date:str):
         # IF NO DATE LOGIC, RETURN NONE
         if not milestone["milestone_metadata"]["date_logic"]:
             return None
@@ -133,29 +126,29 @@ class ServicePlan:
                 return bucket_due_date
             elif "custom_date" in milestone_date_logic.keys():
                 renewal_date_formatted = datetime.strptime(renewal_date,'%Y-%m-%d')
-                return servicePlan.return75Days(renewal_date_formatted=renewal_date_formatted)
+                return self.return75Days(renewal_date_formatted=renewal_date_formatted)
 
-    def milestoneLogicNoDates(milestone:dict,clientConditionals:list,group_size:str):
+    def milestoneLogicNoDates(self,milestone:dict,clientConditionals:list,group_size:str):
         evaluation_array = [
-            servicePlan.groupSize(logicGroupSize=milestone["milestone_metadata"]["group_size"],clientGroupSize=group_size),
-            servicePlan.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
+            self.groupSize(logic_group_size=milestone["milestone_metadata"]["group_size"],client_group_size=group_size),
+            self.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
         ]
         if all(evaluation_array):
             return True
         else:
             return False
 
-    def milestoneLogicNoDependency(milestone:dict,clientConditionals:list,bucketNBP:datetime,group_size:str,renewal_date:str):
+    def milestoneLogicNoDependency(self,milestone:dict,clientConditionals:list,bucketNBP:datetime,group_size:str,renewal_date:str):
         evaluation_array = [
-            servicePlan.groupSize(logicGroupSize=milestone["milestone_metadata"]["group_size"],clientGroupSize=group_size),
-            servicePlan.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
+            self.groupSize(logic_group_size=milestone["milestone_metadata"]["group_size"],client_group_size=group_size),
+            self.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
         ]
         if all(evaluation_array):
-            return servicePlan.milestoneDateLogic(milestone=milestone,bucket_due_date=bucketNBP,group_size=group_size,renewal_date=renewal_date)
+            return self.milestoneDateLogic(milestone=milestone,bucket_due_date=bucketNBP,group_size=group_size,renewal_date=renewal_date)
         elif not all(evaluation_array):
             return None
         
-    def milestoneContinuationLogic(milestone:dict):
+    def milestoneContinuationLogic(self,milestone:dict):
         if len(milestone["milestone_metadata"]["date_logic"].keys()) > 1:
             if "milestone_dependency" in milestone["milestone_metadata"]["date_logic"]["Large Group"]:
                 return False
@@ -164,19 +157,19 @@ class ServicePlan:
         else:
             return False
 
-    def milestoneDependencyCustom(milestone:dict,group_size:str,bucket_due_date:datetime,renewal_date:str,clientConditionals:list,milestone_computed:list):
+    def milestoneDependencyCustom(self,milestone:dict,group_size:str,bucket_due_date:datetime,renewal_date:str,clientConditionals:list,milestone_computed:list):
         evaluation_array = [
-            servicePlan.groupSize(logicGroupSize=milestone["milestone_metadata"]["group_size"],clientGroupSize=group_size),
-            servicePlan.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
+            self.groupSize(logic_group_size=milestone["milestone_metadata"]["group_size"],client_group_size=group_size),
+            self.conditionalTag(logicConditionals=milestone["milestone_metadata"]["conditional_tag"],clientConditionals=clientConditionals)
         ]
         if all(evaluation_array):
             # print(milestone["milestone_metadata"]["date_logic"][group_size].keys())
             if "custom_date" in milestone["milestone_metadata"]["date_logic"][group_size].keys():
-                return servicePlan.milestoneDateLogic(milestone=milestone,bucket_due_date=bucket_due_date,group_size=group_size,renewal_date=renewal_date)
+                return self.milestoneDateLogic(milestone=milestone,bucket_due_date=bucket_due_date,group_size=group_size,renewal_date=renewal_date)
             elif "milestone_dependency" in milestone["milestone_metadata"]["date_logic"][group_size].keys():
                 for l in range(len(milestone_computed)):
                     if milestone["milestone_metadata"]["date_logic"][group_size]["milestone_dependency"] == milestone_computed[l]["milestone_id"]:
-                        due_date = servicePlan.dateTimeNBPDate(
+                        due_date = self.dateTimeNBPDate(
                             date_datetime=milestone_computed[l]["due_date"],
                             time_length=milestone["milestone_metadata"]["date_logic"][group_size]["time_length"],
                             time_unit=milestone["milestone_metadata"]["date_logic"][group_size]["time_unit"]
@@ -186,13 +179,13 @@ class ServicePlan:
         else:
             return False
         
-    def taskLogic(task:dict,group_size:str,funding_tag:str):
+    def taskLogic(self,task:dict,group_size:str,funding_tag:str):
         if not task:
             return False
         elif task:
             evaluation_array = [
-                servicePlan.groupSize(logicGroupSize=task["task_metadata"]["group_size"],clientGroupSize=group_size),
-                servicePlan.fundingTag(logicFundingTag=task["task_metadata"]["funding_tag"],clientFundingTag=funding_tag)
+                self.groupSize(logic_group_size=task["task_metadata"]["group_size"],client_group_size=group_size),
+                self.fundingTag(logicFundingTag=task["task_metadata"]["funding_tag"],clientFundingTag=funding_tag)
             ]
             if all(evaluation_array):
                 return True
