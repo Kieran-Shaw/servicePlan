@@ -7,7 +7,7 @@ from modules.airtableCreds import AirtableCreds
 # @functions_framework.http
 def service_plan(request):
     """
-    Need to recfactor this code, it is frankly quite awful
+    Base state for adding a service plan (or service or compliance) for a client
     """
     # Get the Airtable Credentials from Bucket
     bucket_name = 'service-plan-credentials'
